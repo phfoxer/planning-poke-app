@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Sign</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="back()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Código</ion-label>
+      <ion-input [(ngModel)]="code" type="number" placeholder="Informe o código"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Seu nome</ion-label>
+      <ion-input [(ngModel)]="name" placeholder="Digite seu nome"></ion-input>
+    </ion-item>
+    <ion-item>
+        <button [disabled]="(name=='' || code=='')" ion-button full large (click)="done()">Pronto</button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,15 @@
+page-address {
+    .button-full {
+        border-radius: 16px !important;
+    }
+    ion-list {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0px !important;
+        right: 0px;
+        left: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: #fff;
+    }
+}

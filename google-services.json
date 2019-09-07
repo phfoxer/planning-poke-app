@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "224110300237",
+    "firebase_url": "https://planning-poker-5c900.firebaseio.com",
+    "project_id": "planning-poker-5c900",
+    "storage_bucket": "planning-poker-5c900.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224110300237:android:6eeabac554b0f1d3",
+        "android_client_info": {
+          "package_name": "com.inovaapp.planningpoke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224110300237-v31l8a9ute19kour8m4po1vak3geitpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCc1xu2NCMK1O8gyJgGIuT7L3Ha9eoYYQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

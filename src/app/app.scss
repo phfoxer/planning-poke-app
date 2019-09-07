@@ -1,0 +1,22 @@
+.toolbar-background {
+    background-color: #ffffff;
+  }
+  .toolbar-title-md {
+    color: #587e82;
+  }
+ .scroll-content {
+    background: url('../../assets/imgs/pattern.jpg');
+    background-position: left;
+    background-size: contain;
+}
+.toast-ios .toast-wrapper, .toast-md .toast-wrapper {
+  font-size: 1.0em;
+  margin: 5px;
+  position: absolute;
+  width: auto;
+  border-radius: 6px;
+  background: #88435c;
+  background: -moz-linear-gradient(top, #906574 0%, #9e6077 99%);
+  background: -webkit-linear-gradient(top, #906574 0%,#9e6077 99%);
+  background: linear-gradient(to bottom, #906574 0%,#9e6077 99%)
+}

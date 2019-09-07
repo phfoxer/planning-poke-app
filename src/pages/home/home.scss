@@ -1,0 +1,57 @@
+page-home {
+    .scroll-content {
+        background-color: #e9ebee;
+    }
+    .card-draw  {
+        background-color: #fff;
+        width: 90%;
+        height: 90%;
+        position: absolute;
+        margin: 5% 5%;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        border-radius: 12px;
+        text-align: center;
+        -webkit-box-shadow: 0px 0px 0px 2px #568186;
+        box-shadow: 0px 0px 0px 2px #92ced4;
+        font-size: 182px;
+    }
+    .card-value {
+        border: 0;
+        border-width: 0px;
+        width: 90%;
+        height: 100%;
+        text-align: center;
+    }
+    .move-up {
+        animation: moveUp 400ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .new-card {
+        animation: newCard 400ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    @keyframes moveUp {
+        0% {
+            top:0px;
+        }
+        100% {
+            top: -100%;
+        }
+    }
+    @keyframes newCard {
+        0% {
+            top:-100%;
+        }
+        100% {
+            top: 0;
+        }
+    }
+    .description p {
+        font-size: 1.5rem;
+    }
+}

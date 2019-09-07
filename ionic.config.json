@@ -1,0 +1,7 @@
+{
+  "name": "planingpoke",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

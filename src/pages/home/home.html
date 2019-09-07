@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Planning Poker</ion-title>
+    <ion-buttons *ngIf="(cardStatus==='new')" end>
+      <button ion-button icon-only (click)="back()">
+        <ion-icon name="md-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngIf="(cardStatus==='send')">
+    <ion-card-content>
+      <div class="description">
+        <p>Visit <b>http://planningpoker.inovaapp.com</b> and copy the code.</p>
+        <p>Tap the + button and enter the code and your first name.</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div class="card-draw card-draw-1" [ngClass]="{'move-up':(cardStatus==='send'),'new-card':(cardStatus==='new')}">
+    <input class="card-value" placeholder="*" min="0" max="99" type="number" name="cardValue" [(ngModel)]="cardValue"
+      (keyup)="onEnter($event)">
+  </div>
+</ion-content>
+<ion-fab right bottom *ngIf="(cardStatus==='send')">
+  <button (click)="callNewCard()" ion-fab color="primary">
+    <ion-icon name="md-add"></ion-icon>
+  </button>
+</ion-fab>
